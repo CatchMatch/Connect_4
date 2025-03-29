@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Player Name Modal -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Enter Player Names</h2>
+            <div class="input-group">
+                <label for="player1">Player 1 (Red):</label>
+                <input type="text" id="player1" placeholder="Player 1" value="Player 1">
+            </div>
+            <div class="input-group">
+                <label for="player2">Player 2 (Yellow):</label>
+                <input type="text" id="player2" placeholder="Player 2" value="Player 2">
+            </div>
+            <button id="startGame">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container" style="display:none;">
+        <h1>Connect 4 </h1>
+        <div id="status"></div>
+        <div id="board" class="board"></div>
+        <button id="reset">Reset Game</button>
+    </div>
+    
+    <!-- Pattern Selector -->
+    <div class="pattern-selector">
+        <label for="bgPattern">BG:</label>
+        <select id="bgPattern">
+            <option value="circuit">Circuit</option>
+            <option value="stars">Stars</option>
+            <option value="grid">Grid</option>
+            <option value="hexagon">Hexagon</option>
+            <option value="dots">Dots</option>
+        </select>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
